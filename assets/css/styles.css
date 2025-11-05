@@ -150,6 +150,30 @@
     margin-bottom: 0rem;
 }
 
+.prof-content .txt-img {
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.prof-content .txt-img img {
+    position: absolute;
+    bottom: 120%;             
+    left: 48%;
+    width: 50rem;
+    height: auto;             
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.prof-content .txt-img:hover img {
+    opacity: 1;
+    transform: translateY(-1rem) translateX(-48%);
+}
+
 .embraer-bg {
     background-image: url(../img/cdnlogo.com_embraer.svg);
     background-repeat: no-repeat;
