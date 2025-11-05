@@ -7,26 +7,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/acordeon.css">
 </head>
 <body class="main-bg">
-    <aside class="menu">
-        <section class="main-content menu-content">
-            <h1><a href="">LOGO</a></h1>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <div class="menu-embraer"><h1><a href="#"></a></h1></div>
 
             <nav>
                 <ul>
-                    <li><a href="#">intro</a></li>
-                    <li><a href="#">top 3</a></li>
-                    <li><a href="#">gallery</a></li>
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#prof">Profissional</a></li>
+                    <li><a href="#futuro">Futuro</a></li>
                     <li><a href="#">work</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
 
-    <section class="section"></section>
-    <section class="section"></section>
+    <div id='intro' class="menu-spacing"></div>
+
+    <section class="intro main-bg section">
+        <div class="main-content intro-content">
+
+            <div class="intro-text-content">
+                <h2>Davi Frigi,<br> muito prazer!</h2>
+                <p>Tenho de  anos de caminhada. Fazer a diferença, e é por isso que estou pronto para decolar com a Embraer.</p>
+                <section class="acordeon">
+                    <button class="trigger" type="button">
+                        <h3>Vida Pessoal</h3>
+                    </button>
+
+                    <div class="content">
+                        <h4>Teste</h4>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="intro-img">
+                <img src="" alt="">
+                <img src="assets/img/img-perfil-removebg-preview.png" alt="Uma foto de um menino segurando um microfone dando uma palestra">
+            </div>
+        </div>
+    </section>
+
+    <section id='prof' class="white-bg section">
+        <div class="main-content prof-content">
+            <h2>Profissional</h2>
+
+            <p>Profissionalmente, na Inova Saúde SA, eu fui responsável por desenvolver documentos, relatórios e painéis a vista utilizando SQL (Oracle) para integrar os dados à ERP MV Hospitalar</p>
+
+            <div class="embraer-bg"></div>
+            
+            <p>Meu principal projeto foi uma automação para a requisição de insumos para os banheiros. Percebi que o atraso dos suprimentos estava afetando os KPIs do hospital. Mesmo não sendo minha tarefa, tomei a iniciativa de automatizar o processo utilizando Power Automate e Power BI. Foi importante pois me mostrou o valor de estar atento e pronto para assumir responsabilidades pelos problemas da equipe</p>
+        </div>
+    </section>
+
+    <section id="futuro" class="main-bg section">
+        <div class="grid-one-content main-content">
+            <h2>Futuro</h2>
+            <p>Breve descrição</p>
+
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, voluptates saepe nulla sit distinctio fugit ut temporibus sint, quod voluptatum deserunt mollitia? Provident officia rerum consectetur placeat ipsam iusto eveniet.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis porro, tenetur rem corrupti tempora iusto eos cupiditate quia repudiandae harum sunt autem consequuntur, laboriosam et? Ratione fugiat illo eos.</p>
+                </article>        
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/acordeon.js"></script>
 </body>
 </html>

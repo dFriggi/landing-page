@@ -1,71 +1,18 @@
-:root {
-    --primary-color:#0A0A0A;
-    --white-color: #FFFFFF;
-    --light-gray-color: #EEEEEE;
-    --gap: 3rem;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 5.5rem;
-}
-
-h3 {
-    font-size: 5rem;
-}
-
-h4 {
-    font-size: 4.5rem;
-}
-
-h5 {
-    font-size: 4rem;
-}
-
-h6 {
-    font-size: 3.5rem;
-}
-
-a {
-    text-decoration: none;
-}
-
 .main-bg {
     background-image: url('../img/parabolic-ellipse.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
+    background-repeat: no-repeat;
 }
 
 .white-bg{
     background: var(--white-color);
+    color: var(--embraer-color);
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -75,13 +22,13 @@ a {
 }
 
 .menu {
-    background: var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid var(--light-gray-color);
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
 .menu-content {
@@ -90,6 +37,19 @@ a {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.menu-embraer{
+    height: 6.4rem;
+    width: 10rem;
+    background-image: url(../img/cdnlogo.com_embraer.svg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.menu-spacing {
+    height: 6.5rem;
+    background: var(--light-gray-color);
 }
 
 .menu h1 {
@@ -121,11 +81,90 @@ a {
     left: 50%;
     width: 0;
     height: 0.2rem;
-    background: #ff3c3c;
+    background: var(--secondary-color);
     transition: all 300ms ease-in-out;
 }
 
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.intro-content {
+    position: relative;
+    top: -4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.intro-text-content h2 {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.intro-img img {
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+    height: 100%;
+    mask-image: radial-gradient(circle, black 50%, transparent 70%);
+}
+
+.vida-table h3 {
+    font-size: 5rem;
+    border: 0.2rem solid;
+    border-radius: 5rem;
+    padding: 0 2rem;
+}
+
+.prof-content {
+    height: 100vh;
+    position: relative;
+    max-width: 75rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.prof-content p {
+    margin-bottom: 0rem;
+}
+
+.embraer-bg {
+    background-image: url(../img/cdnlogo.com_embraer.svg);
+    background-repeat: no-repeat;
+    width: 40rem;
+    height: 10rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
 }
