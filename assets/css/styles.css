@@ -106,6 +106,12 @@
     padding: 0.5rem;
 }
 
+.intro-text-content {
+    top: 19rem;
+    justify-content: flex-start;
+    position: relative;
+}
+
 .intro-text-content h2 {
     font-size: 7rem;
     margin-bottom: 5rem;
@@ -116,8 +122,9 @@
 .intro-img img {
     display: block;
     border-radius: 50%;
-    max-width: 100%;
-    height: 100%;
+    width: 120%;
+    max-width: 130%;
+    height: auto;
     mask-image: radial-gradient(circle, black 50%, transparent 70%);
 }
 
