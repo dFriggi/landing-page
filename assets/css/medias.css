@@ -1,14 +1,115 @@
 @media (max-width: 768px) {
+
+    .menu-embraer {
+        background: none;
+        position: absolute;
+    }
+
+    .menu ul li a {
+        font-size: 1.4rem;
+    }
+
+    .menu-content {
+        justify-content: space-around;
+    }
+
     .intro-content {
         grid-template-columns: 1fr;
         height: auto;
+        gap: var(--gap);
     }
 
+    .intro-content h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .intro-content p {
+        font-size: 2rem;
+    }
+
+    .intro-text-content {
+        margin-bottom: 9rem;
+    }
+
+    .intro-text-content p {
+        margin-bottom: 0;
+    }
+
+    .acordeon .trigger h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
     .acordeon.open {
-        position: relative;  /* Tira o 'absolute' */
-            /* Ocupa 100% da coluna, e não '114rem' */
-        top: auto;         /* Reseta o 'top' */
-        left: auto;        /* Reseta o 'left' */
-        max-width: 100%;   /* Reseta o 'max-width' */
+        width: 100%;
+        top: 30.6rem;
+    }
+
+    .acordeon.open .trigger {
+        width: auto;
+    }
+
+    .acordeon.open .content {
+        display: grid;
+        width: auto;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .acordeon.open .content .acordeon-vida .trigger-vida {
+        padding: 0.3rem 0;
+    }
+
+    .acordeon.open .content .acordeon-vida .trigger-vida h6 {
+        font-size: 3rem;
+    }
+
+    .acordeon-vida .content-vida .img-vida img:hover {
+        box-sizing: border-box;
+        margin: 1rem;
+        padding: 1rem;
+        transform: scale(1.3);
+        max-width: 55%;
+        z-index: 101;
+        position: relative;
+    }
+
+    .prof-content {
+        display: grid;
+    }
+
+    .prof-content .tabs-content .tab-prof {
+        display: none;
+    }
+
+    .prof-content .tabs-content .tab-prof.active {
+        height: 70vh;
+        position: relative;
+        max-width: 50rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0 rem;
+    }
+
+    .prof-content .txt-img:hover img {
+        opacity: 0;
+        transform: translateY(1rem) translateX(30%);
+        width: 1rem;
+        height: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 768px;
+    }
+
+    .grid-one-content {
+        display: grid;
     }
 }

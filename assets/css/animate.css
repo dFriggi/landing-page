@@ -1,0 +1,60 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -60rem);
+  }
+}
+
+.acordeon .trigger[anim="sheen"]:not(.toggled)::after {
+  animation: sheen var(--ease-elastic-in-1) 1.8s infinite;
+}
+
+.acordeon .trigger[anim="sheen"]::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: var(--red-sheen);
+  transform: rotateZ(60deg) translate(-30rem, 80rem);
+}
+
+:root {
+    --red: hsl(12, 90%, 63%);
+    --red-shadow: hsl(12, 100%, 60%);
+    --red-sheen: linear-gradient(
+         90deg, rgba(255, 255, 255, 0.8) 50%)
+        /* rgba(224, 196, 144, 0.81) 25%,
+         rgba(224, 133, 54, 0.78) 50%,
+         rgba(224, 85, 43, 0.82) 75%,
+         rgba(208, 50, 11, 0.75) 100%);*/
+}
+
+.acordeon.open .trigger[anim="sheen"]::after {
+  background: transparent;
+}
+
+.acordeon .trigger {
+  all: unset;
+  padding: 6px 12px;
+  border-radius: 0.8rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--white-color);
+  box-shadow: 0 0 0.3rem var(--white-color);
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.acordeon.open .trigger {
+  border: none;
+}
+
+.acordeon.open {
+    box-shadow: 0 0 0.3rem var(--white-color);
+}
