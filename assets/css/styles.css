@@ -92,7 +92,7 @@
 
 .intro-content {
     position: relative;
-    top: -4rem;
+    top: -8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -106,9 +106,15 @@
     padding: 0.5rem;
 }
 
+.intro-text-content {
+    top: 15vh;
+    justify-content: flex-start;
+    position: relative;
+}
+
 .intro-text-content h2 {
     font-size: 7rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -116,8 +122,9 @@
 .intro-img img {
     display: block;
     border-radius: 50%;
+    width: 100vh;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     mask-image: radial-gradient(circle, black 50%, transparent 70%);
 }
 
@@ -131,7 +138,7 @@
 .prof-content {
     height: 100vh;
     position: relative;
-    max-width: 75rem;
+    max-width: 80rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -139,8 +146,84 @@
     align-items: center;
 }
 
+.prof-content .title{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    width: 150%;
+}
+
+.prof-content .title h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
 .prof-content p {
     margin-bottom: 0rem;
+}
+
+.prof-content .tab-trigger{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    max-width: 100%;
+    margin: 0 1.2rem;
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.prof-content .tab-trigger.active{
+    color: var(--embraer-color);
+}   
+
+.prof-content .tabs-content .tab-prof {
+    display: none;
+}
+
+.prof-content .tabs-content .tab-prof.active {
+    height: 70vh;
+    position: relative;
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.prof-content .txt-img {
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.prof-content .txt-img img {
+    position: absolute;
+    bottom: 120%;             
+    right: 48%;
+    width: 0.1rem;
+    height: auto;             
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+    cursor: auto;
+    max-width: 100vw;
+}
+
+.prof-content .txt-img:hover img {
+    opacity: 1;
+    transform: translateY(1rem) translateX(50%);
+    width: 45rem;
+    height: auto;
+}
+
+.prof-content .txt-img img:hover {
+    opacity: 0;
 }
 
 .embraer-bg {
