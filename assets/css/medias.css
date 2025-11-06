@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .acordeon.open {
+        position: relative;  /* Tira o 'absolute' */
+            /* Ocupa 100% da coluna, e não '114rem' */
+        top: auto;         /* Reseta o 'top' */
+        left: auto;        /* Reseta o 'left' */
+        max-width: 100%;   /* Reseta o 'max-width' */
+    }
+}

@@ -7,9 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/medias.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body class="main-bg">
     <aside class="menu white-bg">
@@ -21,8 +24,6 @@
                     <li><a href="#intro">Introdução</a></li>
                     <li><a href="#prof">Profissional</a></li>
                     <li><a href="#futuro">Futuro</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,12 +37,12 @@
             <div class="intro-text-content">
                 <section class="text">
                     <h2>Davi Frigi,<br> muito prazer!</h2>
-                    <p>Tenho de  anos de caminhada. Fazer a diferença, e é por isso que estou pronto para decolar com a Embraer.</p>
+                    <p>Tenho de 20 anos e sou estudante de Ciência da Computação na UNIFESP. É um privilégio concorrer a uma vaga na Embraer!</p>
                 </section> 
                 <section class="acordeon">
-                    <button class="trigger" type="button">
-                        <h3>Vida Pessoal</h3>
-                    </button>
+                        <button anim="sheen" class="trigger" type="button">
+                            <h3>Pessoal</h3>
+                        </button>
 
                     <div class="content">
                         <section class="acordeon-vida">
@@ -94,34 +95,56 @@
 
     <section id='prof' class="white-bg section">
         <div class="main-content prof-content">
-            <h2>Profissional</h2>
+            <div class="title-triggers">
+                <button class="tab-trigger active" data-tab-reference="#profissional">Profissional</button>
+                <button class="tab-trigger" data-tab-reference="#voluntariado">Voluntariado</button>
+            </div>
 
-            <p>Profissionalmente, na Inova Saúde SA, eu fui responsável por desenvolver documentos, relatórios e painéis a vista utilizando SQL (Oracle) para integrar os dados à ERP MV Hospitalar</p>
+            <div class="tabs-content">
 
-            <div class="embraer-bg"></div>
-            
-            <p>Meu principal projeto foi uma automação para a requisição de insumos para os banheiros. Percebi que o atraso dos suprimentos estava afetando os KPIs do hospital. Mesmo não sendo minha tarefa, tomei a iniciativa de automatizar o processo utilizando <span class="txt-img">Power Automate <img src="/assets/img/power-automate.png" alt=""></span> e <span class="txt-img">Power BI <img src="assets/img/req-insumos-img.png" alt="" style="width: 70rem;"></span>. Foi importante pois me mostrou o valor de estar atento e pronto para assumir responsabilidades pelos problemas da equipe</p>
+                <div class="tab-prof active" id="profissional">
+                    <p>Profissionalmente, na Inova Saúde SA, eu fui responsável por desenvolver documentos, relatórios e painéis a vista utilizando SQL (Oracle) para integrar os dados à ERP MV Hospitalar</p>
+
+                    <div class="embraer-bg"></div>
+
+                    <p>Meu principal projeto foi uma automação para a requisição de insumos para os banheiros. Percebi que o atraso dos suprimentos estava afetando os KPIs do hospital. Mesmo não sendo minha tarefa, tomei a iniciativa de automatizar o processo utilizando <span class="txt-img">Power Automate <img src="/assets/img/power-automate.png" alt=""></span> e <span class="txt-img">Power BI <img src="assets/img/req-insumos-img.png" alt="" style="width: 70rem;"></span>. Foi importante pois me mostrou o valor de estar atento e pronto para assumir responsabilidades pelos problemas da equipe</p>
+                </div>
+
+                <div class="tab-prof" id="voluntariado">
+                    <p>Sou voluntário na minha comunidade de fé, Igreja Cristã Bíblica, há 5 anos. Passei por diversas áreas e setores, mas hoje me encontro na área musical e mídias. Porém minha função principal é como líder da equipe de jovens.</p>
+
+                    <div class="embraer-bg"></div>
+
+                    <p>Faço parte da equipe de liderança há 3 anos, porém, líder há 1 ano. Sou responsável pelo planejamento técnico e financeiro de <span class="txt-img">eventos de pequeno a médio porte <img src="/assets/img/img-evento-cw.jpg" alt="" style="transform: translateY(4rem) translateX(0rem); width: 60rem;"></span> e pela <span class="txt-img">ministração de aulas e palestras <img src="/assets/img/pregrando-cw.jpg" alt="" style="width: 50rem;"></span>. Além do mais, como líder, faço questão de estar presente e atento às necessidades das pessoas que frequentam nosso grupo. </p>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="futuro" class="main-bg section">
         <div class="grid-one-content main-content">
             <h2>Futuro</h2>
-            <p>Breve descrição</p>
+            <p>O que me traz aqui.</p>
 
             <div class="grid">
                 <article>
-                    <h3>Teste 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, voluptates saepe nulla sit distinctio fugit ut temporibus sint, quod voluptatum deserunt mollitia? Provident officia rerum consectetur placeat ipsam iusto eveniet.</p>
+                    <h3>Paixão</h3>
+                    <p>O que me traz aqui é a paixão. O pilar que mais me conecto é a 'Paixão por fazer a diferença'. [Seja específico, cite algo que a liderança falou minutos antes - isso mostra que você 'sabe escutar'] "Quando o [Nome do Líder] falou sobre [Tópico da palestra dele], eu senti esse 'brilho no olho'.</p>
                 </article>
                 <article>
-                    <h3>Teste 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis porro, tenetur rem corrupti tempora iusto eos cupiditate quia repudiandae harum sunt autem consequuntur, laboriosam et? Ratione fugiat illo eos.</p>
+                    <h3>Aprendizado</h3>
+                    <p>Eu não estou aqui só para trazer meu conhecimento em [Sua Tech]. Estou aqui para aprender. Quero entender como vocês [Exemplo: 'tratam a complexidade com simplicidade'] em sistemas tão críticos. Quero crescer com a autonomia que a Embraer oferece.</p>
+                </article>        
+                <article>
+                    <h3>Responsabilidade</h3>
+                    <p>Eu não estou aqui só para trazer meu conhecimento em [Sua Tech]. Estou aqui para aprender. Quero entender como vocês [Exemplo: 'tratam a complexidade com simplicidade'] em sistemas tão críticos. Quero crescer com a autonomia que a Embraer oferece.</p>
                 </article>        
             </div>
         </div>
     </section>
 
+    <script src="assets/js/titles.js"></script>
     <script src="assets/js/acordeon.js"></script>
 </body>
 </html>
