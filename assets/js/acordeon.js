@@ -31,3 +31,4 @@ acordeonTriggersIn.forEach((trigger) => {
         }
     })
 })
+
