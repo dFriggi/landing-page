@@ -79,6 +79,7 @@
     height: 0;
     opacity: 0;
     transition: opacity .25s ease-in-out;
+    z-index: inherit;
 }
 
 .acordeon.open {

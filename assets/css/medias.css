@@ -160,7 +160,6 @@
     .acordeon.open {
         width: 100%;
         top: 20.6rem;
-        z-index: 250;
     }
 
     .prof-content {
