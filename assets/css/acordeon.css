@@ -29,12 +29,13 @@
     color: #f1432f;
     border: none;
     position: relative;
+    height: auto;
 }
 
 .acordeon .trigger h3 {
     margin: 0;
     font-size: 5rem;
-    text-align: start;
+    text-align: center;
 }
 
 .acordeon.open .trigger {
@@ -83,7 +84,7 @@
 .acordeon.open {
     position: absolute;
     left: 0.;
-    top: 40.6rem;
+    top: 38.8rem;
     width: 114rem;
     z-index: 100;
     transition: width .25s ease-in-out;
@@ -184,11 +185,19 @@
 }
 
 .acordeon-vida .content-vida .img-vida img{
+    max-width: 0.1rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.acordeon-vida.open .content-vida .img-vida img{
     max-width: 30%;
     height: auto;
     border-radius: 0.2rem;
     transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out;
     transform-origin: center center;
+    opacity: 1;
 }
 
 .acordeon-vida .content-vida .img-vida img:hover{

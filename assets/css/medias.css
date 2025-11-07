@@ -1,24 +1,3 @@
-@media (max-width: 500px) {
-    .intro-content {
-        grid-template-columns: 1fr;
-        height: auto;
-        top: -15rem;
-        gap: 8%;
-    }
-
-    .intro-text-content p {
-        margin-bottom: 0;
-    } 
-
-    .intro-text-content h2 {
-
-        font-size: 5rem;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        line-height: 1;
-    }
-
-}
 
 @media (max-width: 768px) {
 
@@ -114,7 +93,7 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding: 0 rem;
+        padding: 0 2rem;
     }
 
     .prof-content .txt-img:hover img {
@@ -133,5 +112,125 @@
 
     .grid-one-content {
         display: grid;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu{
+        z-index: 400;
+    }
+
+    .menu-embraer {
+        background: none;
+        position: absolute;
+    }
+
+    .menu ul li a {
+        font-size: 1.4rem;
+    }
+
+    .menu-content {
+        justify-content: space-around;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+        height: auto;
+        top: -10rem;
+    }
+
+    .intro-text-content {
+        margin-bottom: 3rem;
+    }
+
+    .intro-text-content p {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    } 
+
+    .intro-text-content h2 {
+
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    .acordeon.open {
+        width: 100%;
+        top: 20.6rem;
+    }
+
+    .prof-content {
+        display: grid;
+        padding: 10rem;
+    }
+
+   .prof-content .title-triggers {
+        display: grid;
+        justify-content: space-around;
+        width: 100vw;
+        font-size: 2rem;
+        gap: 0.6rem;
+    }
+
+    .prof-content p {
+        font-size: 1.5rem;
+    }
+
+    .prof-content .tab-trigger {
+        font-size: 3.5rem;
+        max-width: 100vw;
+    }
+
+    .prof-content .tabs-content .tab-prof {
+        display: none;
+    }
+
+    .prof-content .tabs-content .tab-prof.active {
+        height: 65vh;
+        position: relative;
+        max-width: 100vw;
+        display: flex;
+        padding: 0 2rem;
+    }
+
+    .embraer-bg {
+        width: 100vw;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        max-width: 768px;
+        font-size: 1rem;
+    }
+
+    .grid-one-content {
+        display: grid;
+        padding: 8rem 2rem 2rem 2rem;
+    }   
+
+    .grid-one-content h2 {
+        display: grid;
+        font-size: 5rem;
+        margin-bottom: 0rem;
+    }   
+
+    .grid-one-content p {
+        display: grid;
+        font-size: 1.8rem;
+        margin-bottom: auto;
+    }
+
+    .grid-one-content .grid h3 {
+        font-size: 2rem;
+    }
+
+    .grid-one-content .grid p {
+        font-size: 1.5rem;
+        margin-bottom: auto;
     }
 }
